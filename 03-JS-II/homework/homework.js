@@ -17,13 +17,11 @@ function mayoriaDeEdad(edad) {
     //Si tiene 18 años ó más, devolver --> "Allowed"
     //Si es menor, devolver --> "Not allowed"
     if (edad >= 18) {
-        return "Allowed"
-    } else(edad < 18); {
-        return "Not Allowed"
-    }
-}
+        return "Allowed"; 
+    } else return "Not allowed";
+  }
 
-function conection(status) {
+  function conection(status) {
     //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
     //Cuando el estado es igual a 1, el usuario está "Online"
     //Cuando el estado es igual a 2, el usuario está "Away"
@@ -45,13 +43,15 @@ function saludo(idioma) {
     // Si "idioma" es "ingles", devuelve "Hello!"
     // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
     // Tu código:
-    if (idioma === "aleman") {
-        return "Guten Tag!"
-    } else if (idioma === "mandarin") {
-        return "Ni Hao!"
-    } else if (idioma === "ingles") {
-        return "Hello!"
-    } else { return "Hola" }
+    if(idioma === 'aleman') {
+    return 'Guten Tag!';
+  } else if (idioma === 'mandarin') {
+    return 'Ni Hao!';
+  } else if (idioma === 'ingles') {
+    return 'Hello!';
+  } else {
+    return 'Hola!';
+  }
 }
 
 function colors(color) {
@@ -82,9 +82,7 @@ function esDiezOCinco(numero) {
     // Tu código:
     if (numero === 10 || numero === 5) {
         return "true";
-    } else {
-        return "false";
-    }
+    } else return "false";
 }
 
 function estaEnRango(numero) {
